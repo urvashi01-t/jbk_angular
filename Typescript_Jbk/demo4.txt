@@ -1,0 +1,77 @@
+json
+it store data is in key & value
+//blank json
+let obj:any=<>{};
+let jsonOBj={
+    id:9,
+    "fname":'sumit',
+    "lname":'kuchtoh'.
+}
+//dot operator
+console.log(
+    
+   ` Id   ::  ${jsonOBj.Id}
+    fname   ::  ${jsonOBj["fname"]}
+     lname   ::  ${jsonOBj["lname"]}
+    `
+)
+//square operator
+console.log(
+    
+   ` Id   ::  ${jsonOBj["Id"]}
+    fname   ::  ${jsonOBj["fname"]}
+     lname   ::  ${jsonOBj["lname"]}
+    `
+)
+//Array of object
+let arrObj=[
+    {
+    id:9,
+    "fname":'sumit',
+    "lname":'kuchtoh',
+    country:
+    id:1
+    cname:'india'
+},
+month:["jan","may","dec"]
+result:[
+
+    {subj:"m1"
+    marks:89
+    },
+
+    {subj:"m1"
+    marks:89
+    },
+    {subj:"m1"
+    marks:89
+    },
+    {subj:"m1"
+    marks:89
+    },
+]
+ {
+    id:1,
+    "fname":'sumit',
+    "lname":'kuchtoh'.
+},
+ {
+    id:4,
+    "fname":'sumit',
+    "lname":'kuchtoh'.
+}
+];
+for(let i=0;i<arrObj.length;i++){
+    console.log(
+        ` Id   ::    ${arrObj[i].id}
+     fname   ::    ${arrObj[i].fname}
+      lname   ::    ${arrObj[i].lname}
+      country  ::   ${arrObj[i].country.cname}
+      month
+     `
+     );
+     for(let j=0;j<arrObj[i].result.length;j++){
+        console.log(
+        arrObj[i].result[j].subj
+     }
+}
